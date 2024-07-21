@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  padding: 40px 20px;
+  border-radius: 15px;
+  position: relative;
+  width: 90%;
+  max-width: 450px;
+}
+
+.advice-id {
+  color: var(--Neon-Green);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.advice-text {
+  font-size: 24px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.divider-img {
+  width: 100%;
+}
+
+.dice-button {
+  background-color: var(--Neon-Green);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.dice-button:hover {
+    box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%);
+}
+
+.dice-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Light-Cyan);
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (max-width: 375px) {
+  .advice-text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .advice-text {
+    font-size: 28px;
+  }
+}
